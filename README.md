@@ -1,2 +1,2 @@
-# JavaScript---Exerc-cios
+# JavaScript---Exercicios
 EXERCITE SEU CONHECIMENTO EM JAVASCRIPT
