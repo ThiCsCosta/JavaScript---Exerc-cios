@@ -78,4 +78,30 @@ console.log(frase2);                //    Saída ----> QUAL QUER FRASE OU PALAVR
 let frase3 = convert(prompt("Digite uma palavra uma frase a ser convertida: "));
 console.log(frase3);                //    Saída ----> QUAL QUER FRASE OU PALAVRA.
 
+/;;;;;;;;;;;;
+
+Exercício 5 ----------------------------------------------------------------------
+Desenvolva uma função que determine se um número é primo ou não. 
+Retorne true se for primo e false se não for.
+
+ +
+  Aqui teve o uso dos operadores de comparação e operador lógico
+   === ---> IGUAL A (tanto o valor quanto o tipo do objeto)
+   ||  ---> OU
 */
+function numeroPrimo(numero){
+    if (numero <= 1)
+        return false;
+    if (numero <= 3)
+        return true;
+
+    if (numero % 2 === 0 || numero % 3 === 0)
+        return false;
+    for (let i = 5; i * i <= numero; i += 6){
+        if(numero % i === 0 || numero % (i + 2) === 0)
+            return false;
+    }
+    return true;
+}
+
+console.log(numeroPrimo(37));
